@@ -35,6 +35,8 @@ impl OpenId {
             "grant_type":data["grant_type"],
             "code":data["code"],
             "redirect_uri":data["redirect_uri"],
+            "scope":data["scope"],
+            "client_secret": data["client_secret"],
         });
 
         let path = base_url.to_owned() + &url.to_owned();
